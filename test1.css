@@ -1,0 +1,97 @@
+.headerlogo {
+ height: 20px;
+ position: relative;
+ left: 25px;
+ top: 15px;
+}
+
+ ul{
+ list-style: none;
+ text-align: right;
+ }
+ 
+ li {
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: bold;
+ }
+ 
+ .headerlist1{
+   display: flex;
+   justify-content: center; 
+   font-size: 12px;
+   position: relative;
+   bottom: 10px;
+ }
+ 
+ .headerlist2 {
+   display: flex;
+   justify-content: center; 
+   position: relative;
+   bottom: 35px;
+   font-size: 8px;
+ }
+
+ .orangelogo1 {
+   color: #FFFFFF;
+   border-color: #FFA500;
+   background-color: #FFA500;
+   padding: 15px 20px 15px;
+   font-size: 12px;
+   border-radius: 30px;
+   position: relative;
+   bottom: 40px;
+ }
+ 
+ .Firstview {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 58px;
+    } 
+    
+ .Firstview_container {
+    position: relative;
+    right: 300px;
+    bottom: 50px;
+ }
+ 
+
+ .Firstviewcontent_title {
+   font-size: 38px;
+   font-weight: 700;
+   line-height: 60px;
+   text-align: center;
+ } 
+ 
+ .Pagelogo {
+   display: flex;
+   justify-content: center; 
+   gap: 10px;
+ }
+ 
+ .Firstview_list {
+   display: flex;
+   list-style: none;
+   gap :10px;
+   margin-left: 30%;
+ }
+ 
+ .Firstview_list1 {
+   color: #FFFFFF;
+   border-color: #FFA500;
+   background-color: #FFA500;
+   padding: 20px 35px 20px;
+   font-size: 15px;
+   border-radius: 30px;
+ }
+ 
+ .Firstview_list2 {
+   border: 2px solid #DDDDDD;
+   padding: 20px 35px 20px;
+   font-size: 15px;
+   border-radius: 30px;
+ }
+ 
+   
