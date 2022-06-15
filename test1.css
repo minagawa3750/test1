@@ -1,35 +1,92 @@
-.headerlogo {
- height: 20px;
- position: relative;
- left: 25px;
- top: 15px;
+header {
+ position: absolute;
+ width: 100%
+}
+@media screen and (max-width: 1000px) {
+ header {
+  background: #FFF;
+ }
 }
 
- ul{
+.header_link {
+ text-decoration: none;
+ color: #000000;
+}
+
+.header_link:hover {
+  opacity: 0.8;
+ }
+ 
+.headerlogo {
+ height: 20px;
+ margin-left: 40px;
+ margin-top: 15px;
+}
+
+.hamburger-menu {
+ display: block;
+ text-decoration: none;
+ width: 50px;
+ height: 30px;
+ position: fixed;
+ top: 10px;
+ right: 10px;
+}
+@media screen and (min-width: 1000px) {
+ .hamburger-menu {
+  display: none;
+ }
+}
+
+.hamburger-menu div {
+ height: 3px;
+ width: 60%;
+ background: #000;
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.hamburger-menu div:nth-of-type(1) {
+ transform: translate(-50%, -10px);
+}
+
+.hamburger-menu div:nth-of-type(3) {
+ transform: translate(-50%, 8px);
+}
+
+.headermenu1 {
  list-style: none;
- text-align: right;
+ display: flex;
+ justify-content: center;
+ gap: 40px;
+ font-weight: bold;
+ padding-left: 620px;
+}
+@media screen and (max-width: 1000px) {
+ .headermenu1 {
+  display: none;
  }
+}
+
+.headermenu2 {
+ position: relative; 
+ bottom: 30px;
+}
  
- li {
-  display: inline-block;
-  margin-right: 30px;
-  font-weight: bold;
- }
- 
- .headerlist1{
-   display: flex;
-   justify-content: center; 
-   font-size: 12px;
-   position: relative;
-   bottom: 10px;
+ .headerlist1 {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
  }
  
  .headerlist2 {
-   display: flex;
-   justify-content: center; 
-   position: relative;
-   bottom: 35px;
-   font-size: 8px;
+  display: flex;
+  justify-content: center;
+  font-size: 8px;
+  position: relative;
+  bottom: 25px;
  }
 
  .orangelogo1 {
@@ -40,7 +97,7 @@
    font-size: 12px;
    border-radius: 30px;
    position: relative;
-   bottom: 40px;
+   bottom: 25px;
  }
  
  .Firstview {
@@ -48,13 +105,31 @@
     background-size: cover;
     background-position: center;
     padding-top: 100px;
-    padding-bottom: 58px;
+    padding-bottom: 20px;
     } 
-    
+    @media screen and (max-width: 787px) {
+     .Firstview {
+      display: none;
+     }
+    }
+     
+ 
+ .Firstview2 {
+  display: none;
+ }
+ @media screen and (max-width: 787px) {
+  .Firstview2 {
+   display: block;
+  }
+ }
+ 
  .Firstview_container {
     position: relative;
-    right: 300px;
-    bottom: 50px;
+    right: 500px;
+    margin-bottom: 50px;
+    width: 1880px;
+    height: 530PX;
+    
  }
  
 
@@ -75,7 +150,9 @@
    display: flex;
    list-style: none;
    gap :10px;
-   margin-left: 30%;
+   padding-top: 40px;
+   padding-left: 38%;
+   padding-bottom: 40px;
  }
  
  .Firstview_list1 {
@@ -88,10 +165,69 @@
  }
  
  .Firstview_list2 {
+   color: #000000;
    border: 2px solid #DDDDDD;
    padding: 20px 35px 20px;
    font-size: 15px;
    border-radius: 30px;
  }
  
-   
+ .Firstlink {
+  text-decoration: none;
+ }
+ 
+ .Firstlink:hover {
+  opacity: 0.8;
+ }
+ 
+ .Firstview_under {
+   font-size: 12px;
+   color: #BBBBBB;
+   line-height: 20px;
+   margin-left: 38%;
+ }
+ 
+ .riyoulink {
+   color: #BBBBBB;
+   text-decoration: none;
+ }
+ 
+ .Secondview {
+  background-color: #FF8C00;
+  height: 370px;
+ }
+ 
+ .Secondview_title {
+  padding-left: 50%;
+  padding-top: 20px;
+  font-family: 'Lato',sans-serif;
+  color: #FFFFFF;
+ }
+ 
+.Secondview_title1 {
+ font-weight: bold;
+ font-size: 38px;
+ letter-spacing: 6px;
+ }
+
+.Secondview_title2 {
+ letter-spacing: 2px;
+ font-size: 16px;
+ line-height: 25px;
+}
+
+ video {
+  position: relative;
+  left: 150px;
+  bottom: 250px;
+ }
+ 
+ .Secondview_link {
+  display: flex;
+  justify-content: center; 
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  right: 278px;
+ }
