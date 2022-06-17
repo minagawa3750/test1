@@ -1,10 +1,11 @@
 header {
  position: absolute;
- width: 100%
+ width: 100%;
 }
 @media screen and (max-width: 1000px) {
  header {
   background: #FFF;
+  position: fixed;
  }
 }
 
@@ -59,11 +60,13 @@ header {
 .headermenu1 {
  list-style: none;
  display: flex;
- justify-content: center;
+ justify-content: right;
  gap: 40px;
+ position: relative;
+ right: 60px;
  font-weight: bold;
- padding-left: 620px;
-}
+ width: 100%;
+ }
 @media screen and (max-width: 1000px) {
  .headermenu1 {
   display: none;
@@ -71,7 +74,7 @@ header {
 }
 
 .headermenu2 {
- position: relative; 
+ position: relative;
  bottom: 30px;
 }
  
@@ -100,6 +103,7 @@ header {
    bottom: 25px;
  }
  
+ 
  .Firstview {
     background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
     background-size: cover;
@@ -109,29 +113,34 @@ header {
     } 
     @media screen and (max-width: 787px) {
      .Firstview {
-      display: none;
+      background-image: none;
+      padding: 40px 0 0;
      }
     }
-     
- 
- .Firstview2 {
-  display: none;
+   
+   .Firstview2 {
+    display: none;
+   }
+   @media screen and (max-width: 787px) {
+    .Firstview2 {
+     display: block;
+     width: 100%;
+    }
+   }
+
+ .Firstview_container {
+    width: fit-content;
+    padding-left: 15%;
  }
  @media screen and (max-width: 787px) {
-  .Firstview2 {
-   display: block;
+  .Firstview_container {
+   margin-top: -350px;
+   padding-left: 5%;
   }
- }
- 
- .Firstview_container {
-    position: relative;
-    right: 500px;
-    margin-bottom: 50px;
-    width: 1880px;
-    height: 530PX;
-    
- }
- 
+ } 
+ *{
+    outline: 2px red solid;
+}
 
  .Firstviewcontent_title {
    font-size: 38px;
@@ -139,44 +148,81 @@ header {
    line-height: 60px;
    text-align: center;
  } 
+ @media screen and (max-width: 787px) {
+  .Firstviewcontent_title {
+   font-size: 25px;
+   line-height: 36px;
+   word-break: keep-all;
+   text-align: center;
+  }
+ }
  
  .Pagelogo {
    display: flex;
    justify-content: center; 
    gap: 10px;
+   width: 100%;
+ }
+ @media screen and (max-width: 787px) {
+  .Pagelogo {
+   display: flex;
+   justify-content: space-between;
+  }
  }
  
  .Firstview_list {
    display: flex;
    list-style: none;
    gap :10px;
-   padding-top: 40px;
-   padding-left: 38%;
-   padding-bottom: 40px;
+   margin-top: 30px;
+   margin-left: 13%;
+   margin-bottom: 40px;
  }
  
- .Firstview_list1 {
+ .Firstlink1 {
    color: #FFFFFF;
    border-color: #FFA500;
    background-color: #FFA500;
-   padding: 20px 35px 20px;
+   padding: 20px 60px 20px;
    font-size: 15px;
    border-radius: 30px;
  }
+ @media screen and (max-width: 1000px) {
+  .Firstlink1 {
+   display: flex;
+   justify-content: center;
+   font-size: 15px;
+   text-align: center;
+   word-break: keep-all;
+   width: 200vw;
+  }
+ }
  
- .Firstview_list2 {
+ 
+ .Firstlink2 {
    color: #000000;
    border: 2px solid #DDDDDD;
-   padding: 20px 35px 20px;
+   padding: 20px 50px 20px;
    font-size: 15px;
    border-radius: 30px;
  }
- 
- .Firstlink {
-  text-decoration: none;
+ @media screen and (max-width: 1000px) {
+  .Firstlink2 {
+   display: none;
+  }
  }
  
- .Firstlink:hover {
+ .Firstlink1 {
+  text-decoration: none;
+ }
+ .Firstlink1:hover {
+  opacity: 0.8;
+ }
+ 
+ .Firstlink2 {
+  text-decoration: none;
+ }
+ .Firstlink2:hover {
   opacity: 0.8;
  }
  
@@ -184,7 +230,12 @@ header {
    font-size: 12px;
    color: #BBBBBB;
    line-height: 20px;
-   margin-left: 38%;
+   margin-left: 14%;
+ }
+ @media screen and (max-width: 787px) {
+  .Firstview_under {
+   margin-left: 0;
+  }
  }
  
  .riyoulink {
@@ -192,42 +243,69 @@ header {
    text-decoration: none;
  }
  
- .Secondview {
+ .Secondview_container {
+  display: flex;
   background-color: #FF8C00;
-  height: 370px;
+  width: 100%;
  }
- 
+ @media screen and (max-width: 1300px) {
+  .Secondview_container {
+   display: block;
+  }
+ }
  .Secondview_title {
-  padding-left: 50%;
-  padding-top: 20px;
   font-family: 'Lato',sans-serif;
   color: #FFFFFF;
+  text-align: left;
  }
+ @media screen and (max-width: 1000px) {
+  .Secondview_title {
+   word-break: break-all;
+   }
+  }
  
 .Secondview_title1 {
+ width: 100%;
  font-weight: bold;
- font-size: 38px;
+ font-size: 32px;
  letter-spacing: 6px;
+ }
+ @media screen and (max-width: 787px){
+  .Secondview_title1 {
+   font-size: 5vw;
+  }
  }
 
 .Secondview_title2 {
+ padding-right: 70px;
  letter-spacing: 2px;
- font-size: 16px;
+ font-size: 18px;
  line-height: 25px;
+ margin-bottom: 30px;
 }
+@media screen and (max-width: 787px){
+ .Secondview_title2 {
+  font-size: 3vw;
+  
+  }
+ }
 
  video {
-  position: relative;
-  left: 150px;
-  bottom: 250px;
+  width: 500px;
+  height: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+ @media screen and (max-width: 787px) {
+  video {
+   width: 70vw;
+  }
  }
  
  .Secondview_link {
+  width: 100%;
   display: flex;
-  justify-content: center; 
   font-size: 18px;
   text-decoration: none;
   color: #FFFFFF;
-  position: relative;
-  right: 278px;
  }
