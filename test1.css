@@ -109,7 +109,7 @@ header {
   padding-top: 100px;
   padding-bottom: 20px;
  } 
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 788px) {
    .Firstview {
      background-image: none;
      padding: 40PX 0 0;
@@ -119,7 +119,7 @@ header {
 .Firstview2_main {
   display: none;
  }
-  @media screen and (max-width: 787px) {
+  @media screen and (max-width: 788px) {
    .Firstview2_main {
      display: block;
      max-width: 100%;
