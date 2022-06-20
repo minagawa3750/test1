@@ -102,20 +102,17 @@ header {
   bottom: 25px;
  }
  
-
 .Firstview {
-  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
+  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 20px;
-  max-height: 100%;
-  
  } 
   @media screen and (max-width: 788px) {
    .Firstview {
      background-image: none;
-     padding: 40px 0 0;
+     padding-top: 40px;
     }
    }
    
@@ -126,6 +123,8 @@ header {
    .Firstview2_main {
      display: block;
      max-width: 100%;
+     margin-right: 0;
+     margin-left: 0;
     }
    }
 
@@ -134,31 +133,29 @@ header {
   margin-right: auto;
   margin-left: auto;
 }
+ @media screen and (max-width: 788px) {
+  .Firstview_container {
+   margin-top: -45vw;
+  }
+ }
 
 .Firstview_menu {
   width: fit-content;
  }
-  @media screen and (max-width: 787px) {
-   .Firstview_menu {
-    width: 100vw;
-    margin-top: -270px;
-   }
-  }
  
- .Firstviewcontent_title {
-  text-align: center;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 60px;
- } 
-  @media screen and (max-width: 787px) {
-   .Firstviewcontent_title {
-    font-size: 4vw;
-    line-height: 30px;
-    word-break: keep-all;
-    text-align: center;
-   }
+.Firstviewcontent_title {
+ text-align: center;
+ font-size: 38px;
+ font-weight: 700;
+ line-height: 60px;
+} 
+ @media screen and (max-width: 787px) {
+  .Firstviewcontent_title {
+   font-size: 30px;
+   line-height: 50px;
+   word-break: keep-all;
   }
+ }
  
 .Pagelogo {
   display: flex;
@@ -178,8 +175,13 @@ header {
   gap :10px;
   margin-top: 30px;
   margin-bottom: 40px;
-  word-break: keep-all;
 }
+@media screen and (max-width: 787px) {
+  .Firstview_list {
+   display: flex;
+   justify-content: center;
+  }
+ }
 
 .Firstlink1 {
   color: #FFFFFF;
@@ -189,16 +191,11 @@ header {
   font-size: 15px;
   border-radius: 30px;
 }
- @media screen and (max-width: 787px) {
-  .Firstlink1 {
-   display: flex;
-   justify-content: center;
-   font-size: 15px;
-   text-align: center;
-   word-break: keep-all;
-   width: 200vw;
-  }
+@media screen and (max-width: 787px) {
+ .Firstlink1 {
+  word-break: keep-all;
  }
+}
  
 .Firstlink2 {
   color: #000000;
